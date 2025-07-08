@@ -1,0 +1,91 @@
+{
+  "createPost": {
+    "request": {
+      "method": "POST",
+      "url": "/api/posts",
+      "body": {
+        "content": "Excited to share our latest product update! 🚀 #innovation #tech",
+        "scheduledFor": "2024-01-15T14:30:00.000Z",
+        "platform": "twitter"
+      }
+    },
+    "response": {
+      "success": true,
+      "data": {
+        "id": "abc123def",
+        "content": "Excited to share our latest product update! 🚀 #innovation #tech",
+        "scheduledFor": "2024-01-15T14:30:00.000Z",
+        "platform": "twitter",
+        "status": "pending",
+        "createdAt": "2024-01-15T12:00:00.000Z"
+      }
+    }
+  },
+  "listPosts": {
+    "request": {
+      "method": "GET",
+      "url": "/api/posts"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "id": "abc123def",
+          "content": "Excited to share our latest product update! 🚀 #innovation #tech",
+          "scheduledFor": "2024-01-15T14:30:00.000Z",
+          "platform": "twitter",
+          "status": "pending",
+          "createdAt": "2024-01-15T12:00:00.000Z"
+        },
+        {
+          "id": "xyz789ghi",
+          "content": "Join us for our upcoming webinar on digital transformation strategies.",
+          "scheduledFor": "2024-01-16T10:00:00.000Z",
+          "platform": "linkedin",
+          "status": "published",
+          "createdAt": "2024-01-14T09:00:00.000Z",
+          "publishedAt": "2024-01-16T10:00:15.000Z"
+        }
+      ]
+    }
+  },
+  "publishPost": {
+    "request": {
+      "method": "POST",
+      "url": "/api/posts/abc123def/publish"
+    },
+    "response": {
+      "success": true,
+      "data": null
+    }
+  },
+  "getCredits": {
+    "request": {
+      "method": "GET",
+      "url": "/api/credits"
+    },
+    "response": {
+      "success": true,
+      "data": {
+        "totalCredits": 24,
+        "raffleEntries": 12,
+        "lastUpdated": "2024-01-15T14:30:15.000Z"
+      }
+    }
+  },
+  "errorResponse": {
+    "request": {
+      "method": "POST",
+      "url": "/api/posts",
+      "body": {
+        "content": "",
+        "scheduledFor": "2024-01-15T14:30:00.000Z",
+        "platform": "twitter"
+      }
+    },
+    "response": {
+      "success": false,
+      "error": "Missing required fields: content, scheduledFor, platform"
+    }
+  }
+}
