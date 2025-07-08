@@ -78,7 +78,7 @@ export default function SuccessPage() {
         </form>
       ) : (
         <div className="text-center mt-6 text-green-400 text-xl font-semibold">
-          ✅ Payment completed (mock)!<br />
+          ✅ Payment completed !<br />
           Redirecting back...
         </div>
       )}
