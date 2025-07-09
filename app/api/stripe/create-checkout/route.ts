@@ -16,7 +16,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     }
 
     // 🧪 MOCK checkout success URL
-    const mockUrl = `https://candidate-003-bloggies-module3-1.onrender.com/success?plan=${plan}&mock=true`;
+    const mockUrl = `http://localhost:3000/success?plan=${plan}&mock=true`;
 
     return NextResponse.json({
       success: true,
