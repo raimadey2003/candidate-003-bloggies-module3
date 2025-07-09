@@ -41,13 +41,13 @@ A production-ready social media post scheduler with credit management system, bu
    ```
 
 ## 🌍 Environment Variables
-.env.local
-# Stripe Configuration (Test Mode)
+.env.local (file name)
+### Stripe Configuration (Test Mode)
 STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key_here
 STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key_here
 
-# Application Configuration
+### Application Configuration
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 ## 🧪 Test Commands
