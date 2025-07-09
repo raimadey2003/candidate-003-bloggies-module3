@@ -24,8 +24,8 @@ A production-ready social media post scheduler with credit management system, bu
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd smart-scheduler
+   git clone https://github.com/raimadey2003/candidate-003-bloggies-module3.git
+   cd candidate-003-bloggies-module3
    ```
 
 2. **Install dependencies**:
@@ -36,16 +36,19 @@ A production-ready social media post scheduler with credit management system, bu
 3. **Start development server**:
    ```bash
    npm run dev
-   ```
 
-4. **Build for production**:
-   ```bash
-   npm run build
+
    ```
 
 ## 🌍 Environment Variables
 
-No environment variables required for this assessment - uses in-memory storage.
+# Stripe Configuration (Test Mode)
+STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key_here
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key_here
+
+# Application Configuration
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 ## 🧪 Test Commands
 
@@ -53,15 +56,17 @@ No environment variables required for this assessment - uses in-memory storage.
 # Start development server
 npm run dev
 
-# Build production version
-npm run build
 
-# Start production server
-npm start
-
-# Run linting
-npm run lint
 ```
+
+## Deployment
+After cloning the repository, start the development server locally before opening the Vercel link:
+Once the server is running on http://localhost:3000, you can proceed to open the Vercel link in your browser.
+
+⚠️ Note: The Vercel deployment depends on the local server being active.
+
+https://candidate-003-bloggies-module3-4hvrm5g0w-raima-deys-projects.vercel.app
+
 
 ## 📋 API Endpoints
 
@@ -127,9 +132,3 @@ See `/samples` directory for example API responses and screenshots.
 ✅ Credit system integration  
 ✅ Auto-publishing scheduler  
 
-## 📝 Notes
-
-- Uses in-memory storage for assessment purposes
-- Scheduler starts automatically when the app loads
-- Simulates social media API calls with realistic delays and success rates
-- All times are handled in user's local timezone
