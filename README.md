@@ -114,7 +114,7 @@ https://candidate-003-bloggies-module3-4hvrm5g0w-raima-deys-projects.vercel.app
 
 ## 📊 Sample Responses
 
-See `/samples` directory for example API responses and screenshots.
+See `/samples` directory for samples.
 
 ## 🔧 Architecture
 
