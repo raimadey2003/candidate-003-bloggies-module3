@@ -65,7 +65,7 @@ Once the server is running on http://localhost:3000, you can proceed to open the
 
 ⚠️ Note: The Vercel deployment depends on the local server being active.
 
-https://candidate-003-bloggies-module3-4hvrm5g0w-raima-deys-projects.vercel.app
+https://candidate-003-bloggies-module3-knn4.vercel.app/
 
 
 ## 📋 API Endpoints
