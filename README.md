@@ -41,7 +41,7 @@ A production-ready social media post scheduler with credit management system, bu
    ```
 
 ## 🌍 Environment Variables
-
+.env.local
 # Stripe Configuration (Test Mode)
 STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key_here
 STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
